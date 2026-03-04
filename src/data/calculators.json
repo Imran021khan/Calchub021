@@ -1,0 +1,609 @@
+[
+  {
+    "name": "EMI Calculator",
+    "name_hi": "ईएमआई कैलकुलेटर",
+    "slug": "emi-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "(loanAmount * (rate / 1200) * Math.pow(1 + (rate / 1200), years * 12)) / (Math.pow(1 + (rate / 1200), years * 12) - 1)",
+    "inputs": [
+      { "name": "loanAmount", "label": "Loan Amount ($)", "label_hi": "ऋण राशि ($)", "type": "number", "placeholder": "10000", "placeholder_hi": "10000" },
+      { "name": "rate", "label": "Interest Rate (%)", "label_hi": "ब्याज दर (%)", "type": "number", "placeholder": "10", "placeholder_hi": "10" },
+      { "name": "years", "label": "Loan Term (Years)", "label_hi": "ऋण अवधि (वर्ष)", "type": "number", "placeholder": "5", "placeholder_hi": "5" }
+    ],
+    "seoTitle": "EMI Calculator - Calculate Monthly Loan Repayments",
+    "seoTitle_hi": "ईएमआई कैलकुलेटर - मासिक ऋण चुकौती की गणना करें",
+    "metaDescription": "Calculate your Equated Monthly Installment (EMI) for any loan. Plan your finances with our accurate EMI calculator.",
+    "metaDescription_hi": "किसी भी ऋण के लिए अपनी समान मासिक किस्त (EMI) की गणना करें। हमारे सटीक ईएमआई कैलकुलेटर के साथ अपने वित्त की योजना बनाएं।",
+    "showAmortization": true,
+    "hasChart": true,
+    "longContent": "# Understanding EMI Calculations\n\nAn Equated Monthly Installment (EMI) is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. EMIs are applied to both interest and principal each month so that over a specified number of years, the loan is paid off in full.\n\n## How EMI is Calculated\n\nThe mathematical formula for calculating EMI is: **EMI = [P x R x (1+R)^N]/[(1+R)^N-1]**\n\nWhere:\n- **P** is the Principal Loan Amount\n- **R** is the Monthly Interest Rate (Annual Rate/12/100)\n- **N** is the Number of Monthly Installments\n\n## Benefits of Using an EMI Calculator\n\n1. **Financial Planning**: Knowing exactly how much you need to pay each month helps in budgeting.\n2. **Comparisons**: You can compare different loan offers by adjusting the interest rate and tenure.\n3. **Amortization Schedule**: Understand how much of your payment goes towards the principal vs. interest over time.\n\nUsing our tool, you can visualize the total interest payable and the reduction in principal balance through our interactive charts and tables.",
+    "longContent_hi": "# ईएमआई गणना को समझना\n\nएक समान मासिक किस्त (EMI) एक उधारकर्ता द्वारा एक ऋणदाता को प्रत्येक कैलेंडर माह में एक निर्दिष्ट तिथि पर की जाने वाली एक निश्चित भुगतान राशि है। ईएमआई हर महीने ब्याज और मूलधन दोनों पर लागू होती है ताकि निर्दिष्ट वर्षों में ऋण का पूरा भुगतान हो जाए।\n\n## ईएमआई की गणना कैसे की जाती है\n\nईएमआई की गणना के लिए गणितीय सूत्र है: **EMI = [P x R x (1+R)^N]/[(1+R)^N-1]**\n\nजहाँ:\n- **P** मूल ऋण राशि है\n- **R** मासिक ब्याज दर है (वार्षिक दर/12/100)\n- **N** मासिक किस्तों की संख्या है\n\n## ईएमआई कैलकुलेटर का उपयोग करने के लाभ\n\n1. **वित्तीय योजना**: यह जानना कि आपको हर महीने कितना भुगतान करना है, बजट बनाने में मदद करता है।\n2. **तुलना**: आप ब्याज दर और अवधि को समायोजित करके विभिन्न ऋण प्रस्तावों की तुलना कर सकते हैं।\n3. **परिशोधन अनुसूची**: समझें कि आपके भुगतान का कितना हिस्सा समय के साथ मूलधन बनाम ब्याज में जाता है।\n\nहमारे टूल का उपयोग करके, आप हमारे इंटरैक्टिव चार्ट और तालिकाओं के माध्यम से देय कुल ब्याज और मूल शेष राशि में कमी की कल्पना कर सकते हैं।",
+    "faq": [
+      { "q": "What is EMI?", "a": "EMI stands for Equated Monthly Installment, a fixed amount paid to a lender every month.", "q_hi": "ईएमआई क्या है?", "a_hi": "ईएमआई का मतलब समान मासिक किस्त है, जो हर महीने ऋणदाता को भुगतान की जाने वाली एक निश्चित राशि है।" },
+      { "q": "Can I change my EMI?", "a": "Generally, EMIs are fixed, but you can change them by refinancing or making prepayments.", "q_hi": "क्या मैं अपनी ईएमआई बदल सकता हूँ?", "a_hi": "आम तौर पर, ईएमआई तय होती है, लेकिन आप पुनर्वित्त या पूर्व भुगतान करके उन्हें बदल सकते हैं।" }
+    ]
+  },
+  {
+    "name": "Retirement Planner",
+    "name_hi": "रिटायरमेंट प्लानर",
+    "slug": "retirement-planner",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "currentSavings * Math.pow(1 + (returnRate / 100), yearsToRetire) + (monthlyContribution * 12 * (Math.pow(1 + (returnRate / 100), yearsToRetire) - 1) / (returnRate / 100))",
+    "inputs": [
+      { "name": "currentSavings", "label": "Current Savings ($)", "label_hi": "वर्तमान बचत ($)", "type": "number", "placeholder": "50000", "placeholder_hi": "50000" },
+      { "name": "monthlyContribution", "label": "Monthly Contribution ($)", "label_hi": "मासिक योगदान ($)", "type": "number", "placeholder": "500", "placeholder_hi": "500" },
+      { "name": "yearsToRetire", "label": "Years to Retirement", "label_hi": "रिटायरमेंट तक के वर्ष", "type": "number", "placeholder": "25", "placeholder_hi": "25" },
+      { "name": "returnRate", "label": "Expected Annual Return (%)", "label_hi": "अपेक्षित वार्षिक रिटर्न (%)", "type": "number", "placeholder": "7", "placeholder_hi": "7" }
+    ],
+    "seoTitle": "Retirement Calculator - Plan Your Future Savings",
+    "seoTitle_hi": "रिटायरमेंट कैलकुलेटर - अपनी भविष्य की बचत की योजना बनाएं",
+    "metaDescription": "Calculate how much you will have at retirement based on your current savings and monthly contributions.",
+    "metaDescription_hi": "अपनी वर्तमान बचत और मासिक योगदान के आधार पर गणना करें कि रिटायरमेंट के समय आपके पास कितना पैसा होगा।",
+    "hasChart": true,
+    "longContent": "# Planning for a Secure Retirement\n\nRetirement planning is the process of determining retirement income goals and the actions and decisions necessary to achieve those goals. It includes identifying sources of income, estimating expenses, implementing a savings program, and managing assets.\n\n## Why Start Early?\n\nThe power of compounding is your best friend in retirement planning. By starting early, even small contributions can grow into a significant nest egg over several decades. \n\n## Key Factors in Retirement Planning\n\n- **Inflation**: The cost of living will likely increase over time.\n- **Investment Returns**: Diversifying your portfolio can help manage risk and return.\n- **Life Expectancy**: Planning for a longer life ensures you won't outlive your savings.\n\nOur calculator helps you estimate your future wealth, allowing you to adjust your contributions today for a better tomorrow.",
+    "longContent_hi": "# सुरक्षित रिटायरमेंट के लिए योजना\n\nरिटायरमेंट योजना रिटायरमेंट आय लक्ष्यों और उन लक्ष्यों को प्राप्त करने के लिए आवश्यक कार्यों और निर्णयों को निर्धारित करने की प्रक्रिया है। इसमें आय के स्रोतों की पहचान करना, खर्चों का अनुमान लगाना, बचत कार्यक्रम लागू करना और संपत्ति का प्रबंधन करना शामिल है।\n\n## जल्दी शुरुआत क्यों करें?\n\nचक्रवृद्धि की शक्ति रिटायरमेंट योजना में आपकी सबसे अच्छी दोस्त है। जल्दी शुरुआत करके, छोटे योगदान भी कई दशकों में एक महत्वपूर्ण राशि में बदल सकते हैं।\n\n## रिटायरमेंट योजना में मुख्य कारक\n\n- **मुद्रास्फीति**: जीवन यापन की लागत समय के साथ बढ़ने की संभावना है।\n- **निवेश रिटर्न**: अपने पोर्टफोलियो में विविधता लाने से जोखिम और रिटर्न को प्रबंधित करने में मदद मिल सकती है।\n- **जीवन प्रत्याशा**: लंबे जीवन की योजना बनाना यह सुनिश्चित करता है कि आप अपनी बचत से अधिक समय तक जीवित रहेंगे।\n\nहमारा कैलकुलेटर आपको अपने भविष्य के धन का अनुमान लगाने में मदद करता है, जिससे आप बेहतर कल के लिए आज अपने योगदान को समायोजित कर सकते हैं।",
+    "faq": [
+      { "q": "How much should I save for retirement?", "a": "A common rule of thumb is to aim for 70-80% of your pre-retirement income.", "q_hi": "रिटायरमेंट के लिए मुझे कितना बचाना चाहिए?", "a_hi": "एक सामान्य नियम यह है कि अपनी रिटायरमेंट से पहले की आय का 70-80% लक्ष्य रखें।" },
+      { "q": "What is the 4% rule?", "a": "It's a guideline suggesting you can safely withdraw 4% of your savings annually in retirement.", "q_hi": "4% नियम क्या है?", "a_hi": "यह एक दिशानिर्देश है जो सुझाव देता है कि आप रिटायरमेंट में सालाना अपनी बचत का 4% सुरक्षित रूप से निकाल सकते हैं।" }
+    ]
+  },
+  {
+    "name": "ROI Calculator",
+    "name_hi": "आरओआई कैलकुलेटर",
+    "slug": "roi-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "((finalValue - initialInvestment) / initialInvestment) * 100",
+    "inputs": [
+      { "name": "initialInvestment", "label": "Initial Investment ($)", "label_hi": "प्रारंभिक निवेश ($)", "type": "number", "placeholder": "1000", "placeholder_hi": "1000" },
+      { "name": "finalValue", "label": "Final Value ($)", "label_hi": "अंतिम मूल्य ($)", "type": "number", "placeholder": "1500", "placeholder_hi": "1500" }
+    ],
+    "seoTitle": "ROI Calculator - Calculate Return on Investment",
+    "seoTitle_hi": "आरओआई कैलकुलेटर - निवेश पर रिटर्न की गणना करें",
+    "metaDescription": "Calculate the efficiency of an investment or compare the efficiencies of several different investments.",
+    "metaDescription_hi": "किसी निवेश की दक्षता की गणना करें या कई अलग-अलग निवेशों की दक्षता की तुलना करें।",
+    "hasChart": true,
+    "longContent": "# Understanding Return on Investment (ROI)\n\nReturn on Investment (ROI) is a performance measure used to evaluate the efficiency or profitability of an investment or compare the efficiency of a number of different investments. ROI tries to directly measure the amount of return on a particular investment, relative to the investment’s cost.\n\n## The ROI Formula\n\nTo calculate ROI, the benefit (or return) of an investment is divided by the cost of the investment. The result is expressed as a percentage or a ratio.\n\n**ROI = (Current Value of Investment - Cost of Investment) / Cost of Investment**\n\n## Limitations of ROI\n\nWhile ROI is a versatile and simple metric, it does not account for the **time period** of the investment. An investment with a 50% ROI over 10 years is very different from one with a 50% ROI over 1 year. For time-sensitive comparisons, consider using Annualized ROI or IRR.",
+    "longContent_hi": "# निवेश पर रिटर्न (ROI) को समझना\n\nनिवेश पर रिटर्न (ROI) एक प्रदर्शन माप है जिसका उपयोग निवेश की दक्षता या लाभप्रदता का मूल्यांकन करने या कई अलग-अलग निवेशों की दक्षता की तुलना करने के लिए किया जाता है। आरओआई निवेश की लागत के सापेक्ष किसी विशेष निवेश पर रिटर्न की मात्रा को सीधे मापने की कोशिश करता है।\n\n## आरओआई सूत्र\n\nआरओआई की गणना करने के लिए, निवेश के लाभ (या रिटर्न) को निवेश की लागत से विभाजित किया जाता है। परिणाम को प्रतिशत या अनुपात के रूप में व्यक्त किया जाता है।\n\n**ROI = (निवेश का वर्तमान मूल्य - निवेश की लागत) / निवेश की लागत**\n\n## आरओआई की सीमाएं\n\nजबकि आरओआई एक बहुमुखी और सरल मीट्रिक है, यह निवेश की **समय अवधि** को ध्यान में नहीं रखता है। 10 वर्षों में 50% आरओआई वाला निवेश 1 वर्ष में 50% आरओआई वाले निवेश से बहुत अलग है। समय-संवेदनशील तुलनाओं के लिए, वार्षिक आरओआई या आईआरआर का उपयोग करने पर विचार करें।",
+    "faq": [
+      { "q": "What is a good ROI?", "a": "A 'good' ROI depends on the asset class and risk level; 7-10% is often cited for stocks.", "q_hi": "एक अच्छा आरओआई क्या है?", "a_hi": "एक 'अच्छा' आरओआई एसेट क्लास और जोखिम स्तर पर निर्भर करता है; शेयरों के लिए अक्सर 7-10% का उल्लेख किया जाता है।" },
+      { "q": "Does ROI include taxes?", "a": "Standard ROI usually doesn't, but 'Net ROI' accounts for taxes and fees.", "q_hi": "क्या आरओआई में कर शामिल हैं?", "a_hi": "मानक आरओआई में आमतौर पर नहीं होता है, लेकिन 'नेट आरओआई' करों और शुल्कों का हिसाब रखता है।" }
+    ]
+  },
+  {
+    "name": "Credit Card Payoff Calculator",
+    "name_hi": "क्रेडिट कार्ड भुगतान कैलकुलेटर",
+    "slug": "credit-card-payoff",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "Math.log(monthlyPayment / (monthlyPayment - (balance * (rate / 1200)))) / Math.log(1 + (rate / 1200))",
+    "inputs": [
+      { "name": "balance", "label": "Credit Card Balance ($)", "label_hi": "क्रेडिट कार्ड बैलेंस ($)", "type": "number", "placeholder": "5000", "placeholder_hi": "5000" },
+      { "name": "rate", "label": "Interest Rate (APR %)", "label_hi": "ब्याज दर (APR %)", "type": "number", "placeholder": "18", "placeholder_hi": "18" },
+      { "name": "monthlyPayment", "label": "Monthly Payment ($)", "label_hi": "मासिक भुगतान ($)", "type": "number", "placeholder": "200", "placeholder_hi": "200" }
+    ],
+    "seoTitle": "Credit Card Payoff Calculator - Get Out of Debt Faster",
+    "seoTitle_hi": "क्रेडिट कार्ड भुगतान कैलकुलेटर - कर्ज से तेजी से बाहर निकलें",
+    "metaDescription": "Find out how long it will take to pay off your credit card debt and how much interest you will pay.",
+    "metaDescription_hi": "पता करें कि आपके क्रेडिट कार्ड के कर्ज को चुकाने में कितना समय लगेगा और आप कितना ब्याज देंगे।",
+    "showAmortization": true,
+    "hasChart": true,
+    "longContent": "# Breaking Free from Credit Card Debt\n\nCredit card debt can be one of the most expensive forms of borrowing due to high interest rates. Understanding how your monthly payments affect your balance is crucial for debt elimination.\n\n## The Cost of Minimum Payments\n\nPaying only the minimum amount required by your credit card company can lead to decades of debt. Most of the minimum payment goes towards interest, leaving the principal balance largely untouched.\n\n## Strategies for Faster Payoff\n\n1. **Debt Avalanche**: Pay off cards with the highest interest rates first.\n2. **Debt Snowball**: Pay off the smallest balances first for psychological wins.\n3. **Balance Transfers**: Move debt to a 0% APR card to save on interest.\n\nUse our calculator to see how increasing your monthly payment by even a small amount can shave years off your payoff timeline.",
+    "longContent_hi": "# क्रेडिट कार्ड के कर्ज से मुक्ति\n\nउच्च ब्याज दरों के कारण क्रेडिट कार्ड का कर्ज उधार लेने के सबसे महंगे रूपों में से एक हो सकता है। कर्ज खत्म करने के लिए यह समझना महत्वपूर्ण है कि आपके मासिक भुगतान आपके बैलेंस को कैसे प्रभावित करते हैं।\n\n## न्यूनतम भुगतान की लागत\n\nअपनी क्रेडिट कार्ड कंपनी द्वारा आवश्यक केवल न्यूनतम राशि का भुगतान करने से दशकों तक कर्ज बना रह सकता है। अधिकांश न्यूनतम भुगतान ब्याज की ओर जाता है, जिससे मूल शेष राशि काफी हद तक अछूती रह जाती है।\n\n## तेजी से भुगतान के लिए रणनीतियाँ\n\n1. **डेब्ट एवलांच**: सबसे पहले उच्चतम ब्याज दरों वाले कार्डों का भुगतान करें।\n2. **डेब्ट स्नोबॉल**: मनोवैज्ञानिक जीत के लिए सबसे पहले सबसे कम बैलेंस वाले कार्डों का भुगतान करें।\n3. **बैलेंस ट्रांसफर**: ब्याज बचाने के लिए कर्ज को 0% APR कार्ड पर ले जाएं।\n\nयह देखने के लिए हमारे कैलकुलेटर का उपयोग करें कि आपके मासिक भुगतान को थोड़ी सी मात्रा में बढ़ाने से भी आपके भुगतान की समयसीमा से कितने वर्ष कम हो सकते हैं।",
+    "faq": [
+      { "q": "What is APR?", "a": "APR stands for Annual Percentage Rate, representing the yearly cost of borrowing.", "q_hi": "APR क्या है?", "a_hi": "APR का मतलब वार्षिक प्रतिशत दर है, जो उधार लेने की वार्षिक लागत का प्रतिनिधित्व करता है।" },
+      { "q": "How can I lower my interest rate?", "a": "You can try calling your bank to negotiate or use a balance transfer card.", "q_hi": "मैं अपनी ब्याज दर कैसे कम कर सकता हूँ?", "a_hi": "आप बातचीत करने के लिए अपने बैंक को कॉल करने की कोशिश कर सकते हैं या बैलेंस ट्रांसफर कार्ड का उपयोग कर सकते हैं।" }
+    ]
+  },
+  {
+    "name": "SIP Calculator",
+    "name_hi": "एसआईपी कैलकुलेटर",
+    "slug": "sip-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "monthlyInvestment * ((Math.pow(1 + (rate / 1200), months) - 1) / (rate / 1200)) * (1 + (rate / 1200))",
+    "inputs": [
+      { "name": "monthlyInvestment", "label": "Monthly SIP Amount ($)", "label_hi": "मासिक एसआईपी राशि ($)", "type": "number", "placeholder": "500", "placeholder_hi": "500" },
+      { "name": "rate", "label": "Expected Annual Return (%)", "label_hi": "अपेक्षित वार्षिक रिटर्न (%)", "type": "number", "placeholder": "12", "placeholder_hi": "12" },
+      { "name": "months", "label": "Investment Period (Months)", "label_hi": "निवेश अवधि (महीने)", "type": "number", "placeholder": "120", "placeholder_hi": "120" }
+    ],
+    "seoTitle": "SIP Calculator - Systematic Investment Plan Returns",
+    "seoTitle_hi": "एसआईपी कैलकुलेटर - व्यवस्थित निवेश योजना रिटर्न",
+    "metaDescription": "Calculate the future value of your monthly SIP investments with our accurate SIP calculator.",
+    "metaDescription_hi": "हमारे सटीक एसआईपी कैलकुलेटर के साथ अपने मासिक एसआईपी निवेश के भविष्य के मूल्य की गणना करें।",
+    "hasChart": true,
+    "longContent": "# The Power of Systematic Investment Plans (SIP)\n\nA Systematic Investment Plan (SIP) is an investment vehicle offered by mutual funds to investors, allowing them to invest small amounts periodically instead of lump sums. The frequency of investment is usually weekly, monthly, or quarterly.\n\n## Benefits of SIP\n\n- **Rupee Cost Averaging**: You buy more units when prices are low and fewer when prices are high.\n- **Disciplined Saving**: Automating your investments ensures consistency.\n- **Compounding**: Small amounts invested regularly grow significantly over time.\n\nOur SIP calculator helps you visualize how your wealth grows over time, showing the total invested amount versus the estimated returns.",
+    "longContent_hi": "# व्यवस्थित निवेश योजना (SIP) की शक्ति\n\nएक व्यवस्थित निवेश योजना (SIP) म्यूचुअल फंड द्वारा निवेशकों को दिया जाने वाला एक निवेश माध्यम है, जो उन्हें एकमुश्त राशि के बजाय समय-समय पर छोटी मात्रा में निवेश करने की अनुमति देता है। निवेश की आवृत्ति आमतौर पर साप्ताहिक, मासिक या त्रैमासिक होती है।\n\n## एसआईपी के लाभ\n\n- **रुपया लागत औसत**: जब कीमतें कम होती हैं तो आप अधिक इकाइयां खरीदते हैं और कीमतें अधिक होने पर कम।\n- **अनुशासित बचत**: अपने निवेश को स्वचालित करना निरंतरता सुनिश्चित करता है।\n- **चक्रवृद्धि**: नियमित रूप से निवेश की गई छोटी राशि समय के साथ महत्वपूर्ण रूप से बढ़ती है।\n\nहमारा एसआईपी कैलकुलेटर आपको यह कल्पना करने में मदद करता है कि समय के साथ आपकी संपत्ति कैसे बढ़ती है, कुल निवेशित राशि बनाम अनुमानित रिटर्न दिखाती है।",
+    "faq": [
+      { "q": "Is SIP better than Lumpsum?", "a": "SIP is generally better for volatile markets as it averages out the cost.", "q_hi": "क्या एसआईपी एकमुश्त (Lumpsum) से बेहतर है?", "a_hi": "अस्थिर बाजारों के लिए एसआईपी आम तौर पर बेहतर होता है क्योंकि यह लागत को औसत करता है।" },
+      { "q": "Can I stop my SIP anytime?", "a": "Yes, most mutual funds allow you to stop or pause your SIP without penalties.", "q_hi": "क्या मैं अपना एसआईपी कभी भी रोक सकता हूँ?", "a_hi": "हाँ, अधिकांश म्यूचुअल फंड आपको बिना किसी दंड के अपना एसआईपी रोकने या रोकने की अनुमति देते हैं।" }
+    ]
+  },
+  {
+    "name": "Debt Consolidation Calculator",
+    "name_hi": "ऋण समेकन कैलकुलेटर",
+    "slug": "debt-consolidation",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "((totalDebt * (newRate / 1200) * Math.pow(1 + (newRate / 1200), termMonths)) / (Math.pow(1 + (newRate / 1200), termMonths) - 1))",
+    "inputs": [
+      { "name": "totalDebt", "label": "Total Debt to Consolidate ($)", "label_hi": "समेकित करने के लिए कुल ऋण ($)", "type": "number", "placeholder": "20000", "placeholder_hi": "20000" },
+      { "name": "newRate", "label": "New Loan Interest Rate (%)", "label_hi": "नई ऋण ब्याज दर (%)", "type": "number", "placeholder": "8", "placeholder_hi": "8" },
+      { "name": "termMonths", "label": "New Loan Term (Months)", "label_hi": "नई ऋण अवधि (महीने)", "type": "number", "placeholder": "48", "placeholder_hi": "48" }
+    ],
+    "seoTitle": "Debt Consolidation Calculator - Simplify Your Payments",
+    "seoTitle_hi": "ऋण समेकन कैलकुलेटर - अपने भुगतान सरल करें",
+    "metaDescription": "See if consolidating your debts into a single loan can save you money on interest and lower your monthly payments.",
+    "metaDescription_hi": "देखें कि क्या आपके ऋणों को एक ही ऋण में समेकित करने से आप ब्याज पर पैसा बचा सकते हैं और अपने मासिक भुगतान को कम कर सकते हैं।",
+    "showAmortization": true,
+    "hasChart": true,
+    "longContent": "# Is Debt Consolidation Right for You?\n\nDebt consolidation involves taking out a new loan to pay off multiple other debts. This is usually done to secure a lower interest rate, a lower monthly payment, or the convenience of servicing only one loan.\n\n## When to Consolidate\n\n- **Lower Interest**: If the new loan's APR is significantly lower than your current average APR.\n- **Improved Cash Flow**: If you need a lower monthly payment to manage your budget.\n- **Credit Score**: Consolidating can sometimes improve your credit score by lowering your credit utilization ratio.\n\nUse this tool to compare your current total monthly payments against the potential new consolidated payment.",
+    "longContent_hi": "# क्या ऋण समेकन आपके लिए सही है?\n\nऋण समेकन में कई अन्य ऋणों का भुगतान करने के लिए एक नया ऋण लेना शामिल है। यह आमतौर पर कम ब्याज दर, कम मासिक भुगतान, या केवल एक ऋण की सेवा की सुविधा प्राप्त करने के लिए किया जाता है।\n\n## कब समेकित करें\n\n- **कम ब्याज**: यदि नए ऋण का APR आपके वर्तमान औसत APR से काफी कम है।\n- **बेहतर नकदी प्रवाह**: यदि आपको अपने बजट का प्रबंधन करने के लिए कम मासिक भुगतान की आवश्यकता है।\n- **क्रेडिट स्कोर**: समेकन कभी-कभी आपके क्रेडिट उपयोग अनुपात को कम करके आपके क्रेडिट स्कोर में सुधार कर सकता है।\n\nअपने वर्तमान कुल मासिक भुगतान की संभावित नए समेकित भुगतान के साथ तुलना करने के लिए इस टूल का उपयोग करें।",
+    "faq": [
+      { "q": "Does consolidation hurt my credit?", "a": "A hard inquiry might cause a temporary dip, but long-term it often helps.", "q_hi": "क्या समेकन मेरे क्रेडिट को नुकसान पहुँचाता है?", "a_hi": "एक कठिन पूछताछ अस्थायी गिरावट का कारण बन सकती है, लेकिन दीर्घकालिक रूप से यह अक्सर मदद करती है।" },
+      { "q": "What debts can I consolidate?", "a": "Most unsecured debts like credit cards, medical bills, and personal loans.", "q_hi": "मैं किन ऋणों को समेकित कर सकता हूँ?", "a_hi": "क्रेडिट कार्ड, मेडिकल बिल और व्यक्तिगत ऋण जैसे अधिकांश असुरक्षित ऋण।" }
+    ]
+  },
+  {
+    "name": "Income Tax Calculator",
+    "name_hi": "आयकर कैलकुलेटर",
+    "slug": "income-tax-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "annualIncome * (taxRate / 100)",
+    "inputs": [
+      { "name": "annualIncome", "label": "Annual Gross Income ($)", "label_hi": "वार्षिक सकल आय ($)", "type": "number", "placeholder": "75000", "placeholder_hi": "75000" },
+      { "name": "taxRate", "label": "Estimated Effective Tax Rate (%)", "label_hi": "अनुमानित प्रभावी कर दर (%)", "type": "number", "placeholder": "22", "placeholder_hi": "22" }
+    ],
+    "seoTitle": "Income Tax Calculator - Estimate Your Tax Liability",
+    "seoTitle_hi": "आयकर कैलकुलेटर - अपने कर दायित्व का अनुमान लगाएं",
+    "metaDescription": "Estimate your annual income tax liability based on your gross income and effective tax rate.",
+    "metaDescription_hi": "अपनी सकल आय और प्रभावी कर दर के आधार पर अपने वार्षिक आयकर दायित्व का अनुमान लगाएं।",
+    "hasChart": true,
+    "longContent": "# Understanding Your Income Tax\n\nIncome tax is a type of tax that governments impose on income generated by businesses and individuals within their jurisdiction. By law, taxpayers must file an income tax return annually to determine their tax obligations.\n\n## Marginal vs. Effective Tax Rate\n\n- **Marginal Tax Rate**: The tax rate you pay on your last dollar of income.\n- **Effective Tax Rate**: The actual percentage of your total income that goes to taxes.\n\nOur simplified calculator uses an effective tax rate to give you a quick estimate of your take-home pay versus tax liability.",
+    "longContent_hi": "# अपने आयकर को समझना\n\nआयकर एक प्रकार का कर है जिसे सरकारें अपने अधिकार क्षेत्र के भीतर व्यवसायों और व्यक्तियों द्वारा उत्पन्न आय पर लगाती हैं। कानून के अनुसार, करदाताओं को अपने कर दायित्वों को निर्धारित करने के लिए सालाना आयकर रिटर्न दाखिल करना होगा।\n\n## सीमांत बनाम प्रभावी कर दर\n\n- **सीमांत कर दर**: वह कर दर जो आप अपनी आय के अंतिम डॉलर पर भुगतान करते हैं।\n- **प्रभावी कर दर**: आपकी कुल आय का वास्तविक प्रतिशत जो करों में जाता है।\n\nहमारा सरलीकृत कैलकुलेटर आपको कर दायित्व बनाम आपके घर ले जाने वाले वेतन का त्वरित अनुमान देने के लिए एक प्रभावी कर दर का उपयोग करता है।",
+    "faq": [
+      { "q": "What are tax deductions?", "a": "Expenses you can subtract from your gross income to lower your taxable income.", "q_hi": "कर कटौती क्या हैं?", "a_hi": "खर्च जिन्हें आप अपनी कर योग्य आय को कम करने के लिए अपनी सकल आय से घटा सकते हैं।" },
+      { "q": "What is a tax credit?", "a": "A dollar-for-dollar reduction in the actual tax you owe.", "q_hi": "टैक्स क्रेडिट क्या है?", "a_hi": "आपके द्वारा देय वास्तविक कर में डॉलर-दर-डॉलर की कमी।" }
+    ]
+  },
+  {
+    "name": "Inflation Calculator",
+    "name_hi": "मुद्रास्फीति कैलकुलेटर",
+    "slug": "inflation-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "amount * Math.pow(1 + (inflationRate / 100), years)",
+    "inputs": [
+      { "name": "amount", "label": "Current Amount ($)", "label_hi": "वर्तमान राशि ($)", "type": "number", "placeholder": "1000", "placeholder_hi": "1000" },
+      { "name": "inflationRate", "label": "Annual Inflation Rate (%)", "label_hi": "वार्षिक मुद्रास्फीति दर (%)", "type": "number", "placeholder": "3", "placeholder_hi": "3" },
+      { "name": "years", "label": "Number of Years", "label_hi": "वर्षों की संख्या", "type": "number", "placeholder": "10", "placeholder_hi": "10" }
+    ],
+    "seoTitle": "Inflation Calculator - Future Value of Money",
+    "seoTitle_hi": "मुद्रास्फीति कैलकुलेटर - धन का भविष्य का मूल्य",
+    "metaDescription": "Calculate how inflation will affect the purchasing power of your money over time.",
+    "metaDescription_hi": "गणना करें कि मुद्रास्फीति समय के साथ आपके पैसे की क्रय शक्ति को कैसे प्रभावित करेगी।",
+    "hasChart": true,
+    "longContent": "# The Impact of Inflation on Your Wealth\n\nInflation is the rate at which the general level of prices for goods and services is rising, and, subsequently, purchasing power is falling. Central banks attempt to limit inflation, and avoid deflation, in order to keep the economy running smoothly.\n\n## Why Inflation Matters\n\nIf your savings aren't growing at a rate higher than inflation, you are effectively losing money. This is why investing is crucial for long-term wealth preservation.\n\n## Historical Context\n\nHistorically, inflation has averaged around 2-3% in developed economies, but it can spike during economic shifts. Understanding this helps in setting realistic investment goals.",
+    "longContent_hi": "# आपके धन पर मुद्रास्फीति का प्रभाव\n\nमुद्रास्फीति वह दर है जिस पर वस्तुओं और सेवाओं की कीमतों का सामान्य स्तर बढ़ रहा है, और बाद में, क्रय शक्ति गिर रही है। केंद्रीय बैंक अर्थव्यवस्था को सुचारू रूप से चलाने के लिए मुद्रास्फीति को सीमित करने और अपस्फीति से बचने का प्रयास करते हैं।\n\n## मुद्रास्फीति क्यों मायने रखती है\n\nयदि आपकी बचत मुद्रास्फीति से अधिक दर से नहीं बढ़ रही है, तो आप प्रभावी रूप से पैसा खो रहे हैं। यही कारण है कि दीर्घकालिक धन संरक्षण के लिए निवेश महत्वपूर्ण है।\n\n## ऐतिहासिक संदर्भ\n\nऐतिहासिक रूप से, विकसित अर्थव्यवस्थाओं में मुद्रास्फीति औसतन 2-3% रही है, लेकिन आर्थिक बदलावों के दौरान यह बढ़ सकती है। इसे समझने से यथार्थवादी निवेश लक्ष्य निर्धारित करने में मदद मिलती है।",
+    "faq": [
+      { "q": "What causes inflation?", "a": "Increased demand, rising production costs, or an increase in the money supply.", "q_hi": "मुद्रास्फीति का क्या कारण है?", "a_hi": "बढ़ी हुई मांग, बढ़ती उत्पादन लागत, या मुद्रा आपूर्ति में वृद्धि।" },
+      { "q": "How can I beat inflation?", "a": "By investing in assets like stocks, real estate, or commodities that tend to appreciate.", "q_hi": "मैं मुद्रास्फीति को कैसे हरा सकता हूँ?", "a_hi": "शेयरों, अचल संपत्ति, या वस्तुओं जैसी संपत्तियों में निवेश करके जो मूल्यवान होती हैं।" }
+    ]
+  },
+  {
+    "name": "Savings Goal Calculator",
+    "name_hi": "बचत लक्ष्य कैलकुलेटर",
+    "slug": "savings-goal",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "(targetAmount - currentSavings) / months",
+    "inputs": [
+      { "name": "targetAmount", "label": "Target Savings Goal ($)", "label_hi": "लक्ष्य बचत लक्ष्य ($)", "type": "number", "placeholder": "10000", "placeholder_hi": "10000" },
+      { "name": "currentSavings", "label": "Current Savings ($)", "label_hi": "वर्तमान बचत ($)", "type": "number", "placeholder": "2000", "placeholder_hi": "2000" },
+      { "name": "months", "label": "Time to Reach Goal (Months)", "label_hi": "लक्ष्य तक पहुँचने का समय (महीने)", "type": "number", "placeholder": "12", "placeholder_hi": "12" }
+    ],
+    "seoTitle": "Savings Goal Calculator - Reach Your Financial Targets",
+    "seoTitle_hi": "बचत लक्ष्य कैलकुलेटर - अपने वित्तीय लक्ष्यों तक पहुँचें",
+    "metaDescription": "Calculate how much you need to save each month to reach your financial goal within a specific timeframe.",
+    "metaDescription_hi": "गणना करें कि एक विशिष्ट समय सीमा के भीतर अपने वित्तीय लक्ष्य तक पहुँचने के लिए आपको हर महीने कितना बचत करने की आवश्यकता है।",
+    "hasChart": true,
+    "longContent": "# Achieving Your Financial Goals\n\nWhether you're saving for a house down payment, a new car, or an emergency fund, having a clear plan is the first step toward success.\n\n## Setting SMART Goals\n\n- **Specific**: Define exactly what you're saving for.\n- **Measurable**: Know the exact dollar amount.\n- **Achievable**: Ensure the monthly saving is realistic for your budget.\n- **Relevant**: The goal should matter to your long-term plan.\n- **Time-bound**: Set a clear deadline.\n\nOur calculator simplifies the math, telling you exactly what you need to set aside each month to hit your target.",
+    "longContent_hi": "# अपने वित्तीय लक्ष्यों को प्राप्त करना\n\nचाहे आप घर के डाउन पेमेंट, नई कार, या आपातकालीन निधि के लिए बचत कर रहे हों, एक स्पष्ट योजना होना सफलता की ओर पहला कदम है।\n\n## स्मार्ट (SMART) लक्ष्य निर्धारित करना\n\n- **विशिष्ट (Specific)**: ठीक से परिभाषित करें कि आप किस लिए बचत कर रहे हैं।\n- **मापने योग्य (Measurable)**: सटीक डॉलर राशि जानें।\n- **प्राप्य (Achievable)**: सुनिश्चित करें कि मासिक बचत आपके बजट के लिए यथार्थवादी है।\n- **प्रासंगिक (Relevant)**: लक्ष्य आपकी दीर्घकालिक योजना के लिए मायने रखना चाहिए।\n- **समयबद्ध (Time-bound)**: एक स्पष्ट समय सीमा निर्धारित करें।\n\nहमारा कैलकुलेटर गणित को सरल बनाता है, आपको ठीक-ठीक बताता है कि आपको अपने लक्ष्य तक पहुँचने के लिए हर महीने कितना अलग रखने की आवश्यकता है।",
+    "faq": [
+      { "q": "What is an emergency fund?", "a": "A stash of money set aside to cover 3-6 months of living expenses.", "q_hi": "आपातकालीन निधि क्या है?", "a_hi": "3-6 महीने के रहने के खर्चों को कवर करने के लिए अलग रखा गया पैसा।" },
+      { "q": "Should I pay debt or save?", "a": "Generally, pay off high-interest debt first while maintaining a small emergency fund.", "q_hi": "क्या मुझे कर्ज चुकाना चाहिए या बचत करनी चाहिए?", "a_hi": "आम तौर पर, एक छोटी आपातकालीन निधि बनाए रखते हुए पहले उच्च-ब्याज वाले कर्ज का भुगतान करें।" }
+    ]
+  },
+  {
+    "name": "Auto Lease Calculator",
+    "name_hi": "ऑटो लीज कैलकुलेटर",
+    "slug": "auto-lease-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "((msrp - downPayment) - residualValue) / months + ((msrp - downPayment) + residualValue) * (moneyFactor)",
+    "inputs": [
+      { "name": "msrp", "label": "MSRP / Negotiated Price ($)", "label_hi": "MSRP / बातचीत की गई कीमत ($)", "type": "number", "placeholder": "35000", "placeholder_hi": "35000" },
+      { "name": "downPayment", "label": "Down Payment ($)", "label_hi": "डाउन पेमेंट ($)", "type": "number", "placeholder": "3000", "placeholder_hi": "3000" },
+      { "name": "residualValue", "label": "Residual Value ($)", "label_hi": "अवशिष्ट मूल्य ($)", "type": "number", "placeholder": "20000", "placeholder_hi": "20000" },
+      { "name": "months", "label": "Lease Term (Months)", "label_hi": "लीज अवधि (महीने)", "type": "number", "placeholder": "36", "placeholder_hi": "36" },
+      { "name": "moneyFactor", "label": "Money Factor (e.g. 0.00125)", "label_hi": "मनी फैक्टर (जैसे 0.00125)", "type": "number", "placeholder": "0.00125", "placeholder_hi": "0.00125" }
+    ],
+    "seoTitle": "Auto Lease Calculator - Estimate Monthly Lease Payments",
+    "seoTitle_hi": "ऑटो लीज कैलकुलेटर - मासिक लीज भुगतान का अनुमान लगाएं",
+    "metaDescription": "Calculate your estimated monthly car lease payment based on MSRP, residual value, and money factor.",
+    "metaDescription_hi": "MSRP, अवशिष्ट मूल्य और मनी फैक्टर के आधार पर अपने अनुमानित मासिक कार लीज भुगतान की गणना करें।",
+    "hasChart": true,
+    "longContent": "# Understanding Car Leasing\n\nLeasing a car is like long-term renting. You pay for the vehicle's depreciation during the time you drive it, plus interest and fees.\n\n## Key Terms in Leasing\n\n- **MSRP**: The Manufacturer's Suggested Retail Price.\n- **Residual Value**: The estimated value of the car at the end of the lease.\n- **Money Factor**: The interest rate on the lease (multiply by 2400 to get APR).\n- **Depreciation Fee**: The core part of your payment (MSRP - Residual).\n\nLeasing can offer lower monthly payments than buying, but you don't own the asset at the end.",
+    "longContent_hi": "# कार लीजिंग को समझना\n\nकार लीज पर लेना लंबी अवधि के किराए पर लेने जैसा है। आप वाहन के मूल्यह्रास के लिए भुगतान करते हैं जब आप इसे चलाते हैं, साथ ही ब्याज और शुल्क।\n\n## लीजिंग में मुख्य शब्द\n\n- **MSRP**: निर्माता का सुझाया गया खुदरा मूल्य।\n- **अवशिष्ट मूल्य (Residual Value)**: लीज के अंत में कार का अनुमानित मूल्य।\n- **मनी फैक्टर (Money Factor)**: लीज पर ब्याज दर (APR प्राप्त करने के लिए 2400 से गुणा करें)।\n- **मूल्यह्रास शुल्क (Depreciation Fee)**: आपके भुगतान का मुख्य हिस्सा (MSRP - अवशिष्ट)।\n\nलीजिंग खरीदने की तुलना में कम मासिक भुगतान की पेशकश कर सकती है, लेकिन अंत में आप संपत्ति के मालिक नहीं होते हैं।",
+    "faq": [
+      { "q": "Can I negotiate a lease?", "a": "Yes, you can negotiate the sales price (capitalized cost) just like a purchase.", "q_hi": "क्या मैं लीज पर बातचीत कर सकता हूँ?", "a_hi": "हाँ, आप खरीद की तरह ही बिक्री मूल्य (पूंजीकृत लागत) पर बातचीत कर सकते हैं।" },
+      { "q": "What is a gap insurance?", "a": "Insurance that covers the difference between the car's value and what you owe if it's totaled.", "q_hi": "गैप बीमा क्या है?", "a_hi": "बीमा जो कार के मूल्य और आपके द्वारा बकाया राशि के बीच के अंतर को कवर करता है यदि वह पूरी तरह से नष्ट हो जाती है।" }
+    ]
+  },
+  {
+    "name": "Rental Property ROI",
+    "name_hi": "रेंटल प्रॉपर्टी आरओआई",
+    "slug": "rental-property-roi",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "((monthlyRent * 12) - (monthlyExpenses * 12)) / (purchasePrice + closingCosts) * 100",
+    "inputs": [
+      { "name": "purchasePrice", "label": "Purchase Price ($)", "label_hi": "खरीद मूल्य ($)", "type": "number", "placeholder": "300000", "placeholder_hi": "300000" },
+      { "name": "closingCosts", "label": "Closing Costs ($)", "label_hi": "समापन लागत ($)", "type": "number", "placeholder": "10000", "placeholder_hi": "10000" },
+      { "name": "monthlyRent", "label": "Monthly Rent Income ($)", "label_hi": "मासिक किराया आय ($)", "type": "number", "placeholder": "2500", "placeholder_hi": "2500" },
+      { "name": "monthlyExpenses", "label": "Monthly Expenses (Mortgage, Tax, etc) ($)", "label_hi": "मासिक खर्च (मॉर्टगेज, टैक्स, आदि) ($)", "type": "number", "placeholder": "1800", "placeholder_hi": "1800" }
+    ],
+    "seoTitle": "Rental Property ROI Calculator - Real Estate Investing",
+    "seoTitle_hi": "रेंटल प्रॉपर्टी आरओआई कैलकुलेटर - रियल एस्टेट निवेश",
+    "metaDescription": "Calculate the return on investment (ROI) for your rental property. Analyze cash flow and profitability.",
+    "metaDescription_hi": "अपनी रेंटल प्रॉपर्टी के लिए निवेश पर रिटर्न (ROI) की गणना करें। नकदी प्रवाह और लाभप्रदता का विश्लेषण करें।",
+    "hasChart": true,
+    "longContent": "# Real Estate Investment Analysis\n\nInvesting in rental properties can be a powerful way to build wealth through passive income and property appreciation. However, accurate calculation of ROI is essential before buying.\n\n## Cash-on-Cash Return\n\nThis calculator focuses on the **Cash-on-Cash Return**, which measures the annual return the investor made on the property in relation to the amount of mortgage paid during the same year.\n\n## Factors to Consider\n\n- **Vacancy Rate**: Always account for months where the property might be empty.\n- **Maintenance**: Set aside 1% of the property value annually for repairs.\n- **Property Management**: If you aren't managing it yourself, expect to pay 8-12% of rent.\n\nSuccessful real estate investors look for 'positive cash flow' where income exceeds all expenses.",
+    "longContent_hi": "# रियल एस्टेट निवेश विश्लेषण\n\nरेंटल प्रॉपर्टी में निवेश करना निष्क्रिय आय और संपत्ति की सराहना के माध्यम से धन बनाने का एक शक्तिशाली तरीका हो सकता है। हालांकि, खरीदने से पहले आरओआई की सटीक गणना आवश्यक है।\n\n## कैश-ऑन-कैश रिटर्न\n\nयह कैलकुलेटर **कैश-ऑन-कैश रिटर्न** पर केंद्रित है, जो उसी वर्ष के दौरान भुगतान किए गए मॉर्टगेज की राशि के संबंध में निवेशक द्वारा संपत्ति पर किए गए वार्षिक रिटर्न को मापता है।\n\n## विचार करने योग्य कारक\n\n- **रिक्ति दर (Vacancy Rate)**: हमेशा उन महीनों का हिसाब रखें जहाँ संपत्ति खाली हो सकती है।\n- **रखरखाव**: मरम्मत के लिए सालाना संपत्ति मूल्य का 1% अलग रखें।\n- **संपत्ति प्रबंधन**: यदि आप इसे स्वयं प्रबंधित नहीं कर रहे हैं, तो किराए का 8-12% भुगतान करने की अपेक्षा करें।\n\nसफल रियल एस्टेट निवेशक 'सकारात्मक नकदी प्रवाह' की तलाश करते हैं जहाँ आय सभी खर्चों से अधिक हो।",
+    "faq": [
+      { "q": "What is a good rental ROI?", "a": "Many investors aim for 8-12% cash-on-cash return.", "q_hi": "एक अच्छा रेंटल आरओआई क्या है?", "a_hi": "कई निवेशक 8-12% कैश-ऑन-कैश रिटर्न का लक्ष्य रखते हैं।" },
+      { "q": "What is the 1% rule?", "a": "A guideline that a property should rent for at least 1% of its purchase price.", "q_hi": "1% नियम क्या है?", "a_hi": "एक दिशानिर्देश कि एक संपत्ति को उसके खरीद मूल्य के कम से कम 1% पर किराए पर दिया जाना चाहिए।" }
+    ]
+  },
+  {
+    "name": "Net Worth Calculator",
+    "name_hi": "नेट वर्थ कैलकुलेटर",
+    "slug": "net-worth-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "totalAssets - totalLiabilities",
+    "inputs": [
+      { "name": "totalAssets", "label": "Total Assets (Cash, House, Stocks) ($)", "label_hi": "कुल संपत्ति (नकद, घर, स्टॉक) ($)", "type": "number", "placeholder": "500000", "placeholder_hi": "500000" },
+      { "name": "totalLiabilities", "label": "Total Liabilities (Loans, Debt) ($)", "label_hi": "कुल देनदारियां (ऋण, कर्ज) ($)", "type": "number", "placeholder": "200000", "placeholder_hi": "200000" }
+    ],
+    "seoTitle": "Net Worth Calculator - Track Your Total Wealth",
+    "seoTitle_hi": "नेट वर्थ कैलकुलेटर - अपने कुल धन को ट्रैक करें",
+    "metaDescription": "Calculate your net worth by subtracting your total liabilities from your total assets. Track your financial progress.",
+    "metaDescription_hi": "अपनी कुल संपत्ति में से अपनी कुल देनदारियों को घटाकर अपनी नेट वर्थ की गणना करें। अपनी वित्तीय प्रगति को ट्रैक करें।",
+    "hasChart": true,
+    "longContent": "# What is Net Worth?\n\nYour net worth is the most accurate measure of your financial health. It is the total value of everything you own (assets) minus everything you owe (liabilities).\n\n## Why Track Net Worth?\n\n- **Big Picture**: It moves beyond just income to show true wealth.\n- **Progress Tracking**: Seeing your net worth grow over time is highly motivating.\n- **Retirement Readiness**: Your net worth at retirement determines your lifestyle.\n\n## Increasing Your Net Worth\n\nYou can increase your net worth in two ways: **Increasing Assets** (saving, investing, property value growth) or **Decreasing Liabilities** (paying off debt).",
+    "longContent_hi": "# नेट वर्थ क्या है?\n\nआपकी नेट वर्थ आपके वित्तीय स्वास्थ्य का सबसे सटीक माप है। यह आपके पास मौजूद हर चीज (संपत्ति) का कुल मूल्य है जिसमें से वह सब घटा दिया जाता है जो आपके ऊपर बकाया है (देनदारियां)।\n\n## नेट वर्थ को क्यों ट्रैक करें?\n\n- **बड़ी तस्वीर**: यह वास्तविक धन दिखाने के लिए केवल आय से परे जाता है।\n- **प्रगति ट्रैकिंग**: समय के साथ अपनी नेट वर्थ को बढ़ते देखना अत्यधिक प्रेरक है।\n- **रिटायरमेंट की तैयारी**: रिटायरमेंट के समय आपकी नेट वर्थ आपकी जीवनशैली निर्धारित करती है।\n\n## अपनी नेट वर्थ बढ़ाना\n\nआप अपनी नेट वर्थ को दो तरीकों से बढ़ा सकते हैं: **संपत्ति बढ़ाना** (बचत, निवेश, संपत्ति मूल्य वृद्धि) या **देनदारियां कम करना** (कर्ज चुकाना)।",
+    "faq": [
+      { "q": "Is my home part of my net worth?", "a": "Yes, the equity (market value minus mortgage) is an asset.", "q_hi": "क्या मेरा घर मेरी नेट वर्थ का हिस्सा है?", "a_hi": "हाँ, इक्विटी (बाजार मूल्य घटा मॉर्टगेज) एक संपत्ति है।" },
+      { "q": "How often should I check net worth?", "a": "Quarterly or annually is usually sufficient for most people.", "q_hi": "मुझे कितनी बार नेट वर्थ की जाँच करनी चाहिए?", "a_hi": "अधिकांश लोगों के लिए त्रैमासिक या वार्षिक आमतौर पर पर्याप्त होता है।" }
+    ]
+  },
+  {
+    "name": "Student Loan Calculator",
+    "name_hi": "छात्र ऋण कैलकुलेटर",
+    "slug": "student-loan-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "(loanAmount * (rate / 1200) * Math.pow(1 + (rate / 1200), years * 12)) / (Math.pow(1 + (rate / 1200), years * 12) - 1)",
+    "inputs": [
+      { "name": "loanAmount", "label": "Student Loan Amount ($)", "label_hi": "छात्र ऋण राशि ($)", "type": "number", "placeholder": "30000", "placeholder_hi": "30000" },
+      { "name": "rate", "label": "Interest Rate (%)", "label_hi": "ब्याज दर (%)", "type": "number", "placeholder": "5", "placeholder_hi": "5" },
+      { "name": "years", "label": "Repayment Term (Years)", "label_hi": "चुकौती अवधि (वर्ष)", "type": "number", "placeholder": "10", "placeholder_hi": "10" }
+    ],
+    "seoTitle": "Student Loan Calculator - Plan Your Education Debt",
+    "seoTitle_hi": "छात्र ऋण कैलकुलेटर - अपने शिक्षा ऋण की योजना बनाएं",
+    "metaDescription": "Calculate your monthly student loan payments and see how long it will take to pay off your education debt.",
+    "metaDescription_hi": "अपने मासिक छात्र ऋण भुगतान की गणना करें और देखें कि आपके शिक्षा ऋण को चुकाने में कितना समय लगेगा।",
+    "showAmortization": true,
+    "hasChart": true,
+    "longContent": "# Managing Student Loan Debt\n\nStudent loans are a significant financial burden for many graduates. Understanding your repayment options and the total cost of the loan is vital for long-term financial stability.\n\n## Types of Student Loans\n\n- **Federal Loans**: Often have fixed interest rates and income-driven repayment plans.\n- **Private Loans**: Rates can be variable and terms are set by the lender.\n\n## Repayment Strategies\n\n- **Standard Repayment**: Fixed payments over 10 years.\n- **Income-Driven**: Payments based on a percentage of your discretionary income.\n- **Public Service Loan Forgiveness (PSLF)**: Forgiveness after 120 qualifying payments while working in public service.",
+    "longContent_hi": "# छात्र ऋण ऋण का प्रबंधन\n\nछात्र ऋण कई स्नातकों के लिए एक महत्वपूर्ण वित्तीय बोझ हैं। आपकी चुकौती विकल्पों और ऋण की कुल लागत को समझना दीर्घकालिक वित्तीय स्थिरता के लिए महत्वपूर्ण है।\n\n## छात्र ऋण के प्रकार\n\n- **संघीय ऋण (Federal Loans)**: अक्सर निश्चित ब्याज दरें और आय-आधारित चुकौती योजनाएं होती हैं।\n- **निजी ऋण (Private Loans)**: दरें परिवर्तनशील हो सकती हैं और शर्तें ऋणदाता द्वारा निर्धारित की जाती हैं।\n\n## चुकौती रणनीतियाँ\n\n- **मानक चुकौती**: 10 वर्षों में निश्चित भुगतान।\n- **आय-आधारित**: आपकी विवेकाधीन आय के प्रतिशत के आधार पर भुगतान।\n- **सार्वजनिक सेवा ऋण माफी (PSLF)**: सार्वजनिक सेवा में काम करते हुए 120 योग्यता भुगतान के बाद माफी।",
+    "faq": [
+      { "q": "Can I refinance student loans?", "a": "Yes, but refinancing federal loans into private ones loses federal protections.", "q_hi": "क्या मैं छात्र ऋण को पुनर्वित्त (Refinance) कर सकता हूँ?", "a_hi": "हाँ, लेकिन संघीय ऋणों को निजी ऋणों में पुनर्वित्त करने से संघीय सुरक्षा समाप्त हो जाती है।" },
+      { "q": "What is a grace period?", "a": "The time after graduation before you must start making payments.", "q_hi": "अनुग्रह अवधि (Grace Period) क्या है?", "a_hi": "स्नातक होने के बाद का वह समय जब आपको भुगतान शुरू करना होता है।" }
+    ]
+  },
+  {
+    "name": "CD Calculator",
+    "name_hi": "सीडी कैलकुलेटर",
+    "slug": "cd-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "principal * Math.pow(1 + (rate / 100), years)",
+    "inputs": [
+      { "name": "principal", "label": "CD Deposit Amount ($)", "label_hi": "सीडी जमा राशि ($)", "type": "number", "placeholder": "5000", "placeholder_hi": "5000" },
+      { "name": "rate", "label": "Annual Interest Rate (APY %)", "label_hi": "वार्षिक ब्याज दर (APY %)", "type": "number", "placeholder": "4.5", "placeholder_hi": "4.5" },
+      { "name": "years", "label": "Term Length (Years)", "label_hi": "अवधि की लंबाई (वर्ष)", "type": "number", "placeholder": "2", "placeholder_hi": "2" }
+    ],
+    "seoTitle": "CD Calculator - Certificate of Deposit Returns",
+    "seoTitle_hi": "सीडी कैलकुलेटर - जमा प्रमाणपत्र रिटर्न",
+    "metaDescription": "Calculate the interest you will earn on a Certificate of Deposit (CD) based on the APY and term length.",
+    "metaDescription_hi": "APY और अवधि की लंबाई के आधार पर जमा प्रमाणपत्र (CD) पर आपके द्वारा अर्जित ब्याज की गणना करें।",
+    "hasChart": true,
+    "longContent": "# Investing in Certificates of Deposit (CDs)\n\nA Certificate of Deposit (CD) is a low-risk savings tool that can boost your earnings while keeping your money safe. It's a type of savings account with a fixed interest rate and a fixed date of withdrawal.\n\n## Why Choose a CD?\n\n- **Guaranteed Returns**: Unlike the stock market, your return is fixed.\n- **Safety**: CDs are usually FDIC-insured up to $250,000.\n- **Higher Rates**: CDs typically offer higher interest rates than standard savings accounts.\n\n## The Trade-off\n\nThe main downside to a CD is **liquidity**. If you need to withdraw your money before the term ends, you'll likely face an early withdrawal penalty.",
+    "longContent_hi": "# जमा प्रमाणपत्र (CD) में निवेश\n\nजमा प्रमाणपत्र (CD) एक कम जोखिम वाला बचत उपकरण है जो आपके पैसे को सुरक्षित रखते हुए आपकी कमाई को बढ़ा सकता है। यह एक प्रकार का बचत खाता है जिसमें एक निश्चित ब्याज दर और निकासी की एक निश्चित तिथि होती है।\n\n## सीडी क्यों चुनें?\n\n- **गारंटीड रिटर्न**: शेयर बाजार के विपरीत, आपका रिटर्न निश्चित है।\n- **सुरक्षा**: सीडी आमतौर पर $250,000 तक FDIC-बीमाकृत होती हैं।\n- **उच्च दरें**: सीडी आमतौर पर मानक बचत खातों की तुलना में उच्च ब्याज दरों की पेशकश करती हैं।\n\n## ट्रेड-ऑफ\n\nसीडी का मुख्य नकारात्मक पक्ष **तरलता (Liquidity)** है। यदि आपको अवधि समाप्त होने से पहले अपना पैसा निकालने की आवश्यकता है, तो आपको संभवतः समय से पहले निकासी दंड का सामना करना पड़ेगा।",
+    "faq": [
+      { "q": "What is APY?", "a": "Annual Percentage Yield, which accounts for the effect of compounding interest.", "q_hi": "APY क्या है?", "a_hi": "वार्षिक प्रतिशत उपज, जो चक्रवृद्धि ब्याज के प्रभाव का हिसाब रखती है।" },
+      { "q": "What is a CD ladder?", "a": "A strategy of buying multiple CDs with different maturity dates to maintain liquidity.", "q_hi": "सीडी लैडर क्या है?", "a_hi": "तरलता बनाए रखने के लिए अलग-अलग परिपक्वता तिथियों के साथ कई सीडी खरीदने की रणनीति।" }
+    ]
+  },
+  {
+    "name": "Simple Interest Calculator",
+    "name_hi": "साधारण ब्याज कैलकुलेटर",
+    "slug": "simple-interest",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "principal * (rate / 100) * years",
+    "inputs": [
+      { "name": "principal", "label": "Principal Amount ($)", "label_hi": "मूलधन राशि ($)", "type": "number", "placeholder": "1000", "placeholder_hi": "1000" },
+      { "name": "rate", "label": "Annual Interest Rate (%)", "label_hi": "वार्षिक ब्याज दर (%)", "type": "number", "placeholder": "5", "placeholder_hi": "5" },
+      { "name": "years", "label": "Time (Years)", "label_hi": "समय (वर्ष)", "type": "number", "placeholder": "3", "placeholder_hi": "3" }
+    ],
+    "seoTitle": "Simple Interest Calculator - Quick Interest Math",
+    "seoTitle_hi": "साधारण ब्याज कैलकुलेटर - त्वरित ब्याज गणित",
+    "metaDescription": "Calculate simple interest on a loan or investment with our easy-to-use calculator.",
+    "metaDescription_hi": "हमारे उपयोग में आसान कैलकुलेटर के साथ ऋण या निवेश पर साधारण ब्याज की गणना करें।",
+    "hasChart": true,
+    "longContent": "# Understanding Simple Interest\n\nSimple interest is a quick and easy method of calculating the interest charge on a loan. Simple interest is determined by multiplying the daily interest rate by the principal by the number of days that elapse between payments.\n\n## The Formula\n\n**Simple Interest = P x R x T**\n\nWhere:\n- **P** is the Principal amount\n- **R** is the annual interest rate\n- **T** is the time in years\n\nSimple interest is commonly used for short-term loans or certain types of consumer credit.",
+    "longContent_hi": "# साधारण ब्याज को समझना\n\nसाधारण ब्याज ऋण पर ब्याज शुल्क की गणना करने का एक त्वरित और आसान तरीका है। साधारण ब्याज का निर्धारण दैनिक ब्याज दर को मूलधन से और भुगतान के बीच बीतने वाले दिनों की संख्या से गुणा करके किया जाता है।\n\n## सूत्र\n\n**साधारण ब्याज = P x R x T**\n\nजहाँ:\n- **P** मूलधन राशि है\n- **R** वार्षिक ब्याज दर है\n- **T** वर्षों में समय है\n\nसाधारण ब्याज आमतौर पर अल्पकालिक ऋण या कुछ प्रकार के उपभोक्ता क्रेडिट के लिए उपयोग किया जाता है।",
+    "faq": [
+      { "q": "How is simple interest different from compound?", "a": "Simple interest is only calculated on the principal, while compound is on principal plus accumulated interest.", "q_hi": "साधारण ब्याज चक्रवृद्धि से कैसे भिन्न है?", "a_hi": "साधारण ब्याज की गणना केवल मूलधन पर की जाती है, जबकि चक्रवृद्धि मूलधन और संचित ब्याज पर होती है।" },
+      { "q": "Where is simple interest used?", "a": "Auto loans and some personal loans often use simple interest.", "q_hi": "साधारण ब्याज का उपयोग कहाँ किया जाता है?", "a_hi": "ऑटो ऋण और कुछ व्यक्तिगत ऋण अक्सर साधारण ब्याज का उपयोग करते हैं।" }
+    ]
+  },
+  {
+    "name": "401k Calculator",
+    "name_hi": "401k कैलकुलेटर",
+    "slug": "401k-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "currentBalance * Math.pow(1 + (rate / 100), years) + (annualSalary * (contribution / 100) * (Math.pow(1 + (rate / 100), years) - 1) / (rate / 100))",
+    "inputs": [
+      { "name": "currentBalance", "label": "Current 401k Balance ($)", "label_hi": "वर्तमान 401k शेष राशि ($)", "type": "number", "placeholder": "25000", "placeholder_hi": "25000" },
+      { "name": "annualSalary", "label": "Annual Salary ($)", "label_hi": "वार्षिक वेतन ($)", "type": "number", "placeholder": "60000", "placeholder_hi": "60000" },
+      { "name": "contribution", "label": "Your Contribution (%)", "label_hi": "आपका योगदान (%)", "type": "number", "placeholder": "10", "placeholder_hi": "10" },
+      { "name": "years", "label": "Years Until Retirement", "label_hi": "रिटायरमेंट तक के वर्ष", "type": "number", "placeholder": "20", "placeholder_hi": "20" },
+      { "name": "rate", "label": "Expected Annual Return (%)", "label_hi": "अपेक्षित वार्षिक रिटर्न (%)", "type": "number", "placeholder": "7", "placeholder_hi": "7" }
+    ],
+    "seoTitle": "401k Calculator - Estimate Your Retirement Nest Egg",
+    "seoTitle_hi": "401k कैलकुलेटर - अपने रिटायरमेंट फंड का अनुमान लगाएं",
+    "metaDescription": "Calculate how much your 401k will grow over time based on your contributions and expected returns.",
+    "metaDescription_hi": "अपने योगदान और अपेक्षित रिटर्न के आधार पर गणना करें कि आपका 401k समय के साथ कितना बढ़ेगा।",
+    "hasChart": true,
+    "longContent": "# Maximizing Your 401k\n\nA 401k is a retirement savings plan sponsored by an employer. It lets workers save and invest a piece of their paycheck before taxes are taken out. Taxes aren't paid until the money is withdrawn from the account.\n\n## Employer Match\n\nOne of the biggest benefits of a 401k is the **employer match**. If your employer offers a match, it's essentially 'free money' and you should aim to contribute at least enough to get the full match.\n\n## Tax Advantages\n\n- **Traditional 401k**: Contributions are pre-tax, lowering your current taxable income.\n- **Roth 401k**: Contributions are after-tax, but withdrawals in retirement are tax-free.",
+    "longContent_hi": "# अपने 401k को अधिकतम करना\n\n401k नियोक्ता द्वारा प्रायोजित एक रिटायरमेंट बचत योजना है। यह कर्मचारियों को करों के कटने से पहले अपने वेतन का एक हिस्सा बचाने और निवेश करने की अनुमति देता है। खाते से पैसा निकालने तक करों का भुगतान नहीं किया जाता है।\n\n## नियोक्ता मिलान (Employer Match)\n\n401k के सबसे बड़े लाभों में से एक **नियोक्ता मिलान** है। यदि आपका नियोक्ता मिलान की पेशकश करता है, तो यह अनिवार्य रूप से 'मुफ्त पैसा' है और आपको कम से कम इतना योगदान करने का लक्ष्य रखना चाहिए कि पूरा मिलान मिल सके।\n\n## कर लाभ\n\n- **पारंपरिक 401k**: योगदान कर-पूर्व होता है, जिससे आपकी वर्तमान कर योग्य आय कम हो जाती है।\n- **रोथ 401k**: योगदान कर-बाद होता है, लेकिन रिटायरमेंट में निकासी कर-मुक्त होती है।",
+    "faq": [
+      { "q": "What is the 401k contribution limit?", "a": "For 2024, the limit is $23,000 for individuals under 50.", "q_hi": "401k योगदान सीमा क्या है?", "a_hi": "2024 के लिए, 50 वर्ष से कम उम्र के व्यक्तियों के लिए सीमा $23,000 है।" },
+      { "q": "Can I withdraw from my 401k early?", "a": "Yes, but you'll usually face a 10% penalty and income taxes if under age 59.5.", "q_hi": "क्या मैं अपने 401k से जल्दी पैसा निकाल सकता हूँ?", "a_hi": "हाँ, लेकिन यदि आपकी आयु 59.5 वर्ष से कम है, तो आपको आमतौर पर 10% दंड और आयकर का सामना करना पड़ेगा।" }
+    ]
+  },
+  {
+    "name": "Lumpsum Investment",
+    "name_hi": "एकमुश्त निवेश",
+    "slug": "lumpsum-investment",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "principal * Math.pow(1 + (rate / 100), years)",
+    "inputs": [
+      { "name": "principal", "label": "Initial Investment ($)", "label_hi": "प्रारंभिक निवेश ($)", "type": "number", "placeholder": "10000", "placeholder_hi": "10000" },
+      { "name": "rate", "label": "Expected Annual Return (%)", "label_hi": "अपेक्षित वार्षिक रिटर्न (%)", "type": "number", "placeholder": "10", "placeholder_hi": "10" },
+      { "name": "years", "label": "Investment Period (Years)", "label_hi": "निवेश अवधि (वर्ष)", "type": "number", "placeholder": "10", "placeholder_hi": "10" }
+    ],
+    "seoTitle": "Lumpsum Calculator - Future Value of One-Time Investment",
+    "seoTitle_hi": "एकमुश्त कैलकुलेटर - एक बार के निवेश का भविष्य का मूल्य",
+    "metaDescription": "Calculate the future value of a one-time lumpsum investment over a specific period.",
+    "metaDescription_hi": "एक विशिष्ट अवधि में एक बार के एकमुश्त निवेश के भविष्य के मूल्य की गणना करें।",
+    "hasChart": true,
+    "longContent": "# The Power of Lumpsum Investing\n\nLumpsum investing is the act of investing a large amount of money all at once, rather than spreading it out over time. This strategy is often used when an investor receives a windfall, such as an inheritance or a bonus.\n\n## Lumpsum vs. SIP\n\nWhile SIPs are great for regular income earners, lumpsum investing can be more profitable in a bull market because the entire amount is exposed to growth from day one.\n\n## Risk Management\n\nThe main risk of lumpsum investing is 'market timing'. If you invest right before a market dip, your entire capital takes the hit. Diversification is key to managing this risk.",
+    "longContent_hi": "# एकमुश्त निवेश की शक्ति\n\nएकमुश्त निवेश समय के साथ फैलाने के बजाय एक ही बार में बड़ी राशि निवेश करने का कार्य है। इस रणनीति का उपयोग अक्सर तब किया जाता है जब किसी निवेशक को विरासत या बोनस जैसी बड़ी राशि प्राप्त होती है।\n\n## एकमुश्त बनाम एसआईपी\n\nजबकि एसआईपी नियमित आय अर्जित करने वालों के लिए बहुत अच्छे हैं, एकमुश्त निवेश बुल मार्केट (तेजी के बाजार) में अधिक लाभदायक हो सकता है क्योंकि पूरी राशि पहले दिन से ही वृद्धि के संपर्क में आती है।\n\n## जोखिम प्रबंधन\n\nएकमुश्त निवेश का मुख्य जोखिम 'मार्केट टाइमिंग' है। यदि आप बाजार में गिरावट से ठीक पहले निवेश करते हैं, तो आपकी पूरी पूंजी प्रभावित होती है। इस जोखिम को प्रबंधित करने के लिए विविधीकरण (Diversification) महत्वपूर्ण है।",
+    "faq": [
+      { "q": "When should I invest a lumpsum?", "a": "When you have a large amount of cash and a long-term investment horizon.", "q_hi": "मुझे एकमुश्त निवेश कब करना चाहिए?", "a_hi": "जब आपके पास बड़ी मात्रा में नकदी और दीर्घकालिक निवेश क्षितिज हो।" },
+      { "q": "Is lumpsum riskier than SIP?", "a": "Yes, in the short term, due to market volatility and timing risk.", "q_hi": "क्या एकमुश्त एसआईपी से अधिक जोखिम भरा है?", "a_hi": "हाँ, अल्पावधि में, बाजार की अस्थिरता और टाइमिंग जोखिम के कारण।" }
+    ]
+  },
+  {
+    "name": "Sales Tax Calculator",
+    "name_hi": "बिक्री कर कैलकुलेटर",
+    "slug": "sales-tax-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "amount * (taxRate / 100)",
+    "inputs": [
+      { "name": "amount", "label": "Purchase Amount ($)", "label_hi": "खरीद राशि ($)", "type": "number", "placeholder": "100", "placeholder_hi": "100" },
+      { "name": "taxRate", "label": "Sales Tax Rate (%)", "label_hi": "बिक्री कर दर (%)", "type": "number", "placeholder": "8.25", "placeholder_hi": "8.25" }
+    ],
+    "seoTitle": "Sales Tax Calculator - Calculate Total Cost with Tax",
+    "seoTitle_hi": "बिक्री कर कैलकुलेटर - कर के साथ कुल लागत की गणना करें",
+    "metaDescription": "Quickly calculate the sales tax and total price of an item with our free sales tax calculator.",
+    "metaDescription_hi": "हमारे मुफ्त बिक्री कर कैलकुलेटर के साथ किसी वस्तु के बिक्री कर और कुल मूल्य की शीघ्रता से गणना करें।",
+    "hasChart": true,
+    "longContent": "# Understanding Sales Tax\n\nSales tax is a consumption tax imposed by the government on the sale of goods and services. A conventional sales tax is levied at the point of sale, collected by the retailer, and passed on to the government.\n\n## How it Varies\n\nSales tax rates vary significantly by state, county, and even city. Some states in the US have no sales tax at all, while others can exceed 10% when combined with local taxes.\n\n## Tax-Exempt Items\n\nIn many jurisdictions, essential items like groceries and prescription drugs are exempt from sales tax or taxed at a lower rate.",
+    "longContent_hi": "# बिक्री कर को समझना\n\nबिक्री कर वस्तुओं और सेवाओं की बिक्री पर सरकार द्वारा लगाया जाने वाला उपभोग कर है। एक पारंपरिक बिक्री कर बिक्री के बिंदु पर लगाया जाता है, खुदरा विक्रेता द्वारा एकत्र किया जाता है, और सरकार को दिया जाता है।\n\n## यह कैसे भिन्न होता है\n\nबिक्री कर की दरें राज्य, काउंटी और यहां तक कि शहर के अनुसार काफी भिन्न होती हैं। अमेरिका के कुछ राज्यों में कोई बिक्री कर नहीं है, जबकि अन्य में स्थानीय करों के साथ मिलकर यह 10% से अधिक हो सकता है।\n\n## कर-मुक्त वस्तुएं\n\nकई क्षेत्रों में, किराने का सामान और डॉक्टर के पर्चे वाली दवाओं जैसी आवश्यक वस्तुओं को बिक्री कर से छूट दी जाती है या कम दर पर कर लगाया जाता है।",
+    "faq": [
+      { "q": "What is use tax?", "a": "A tax on items purchased out-of-state for use in your home state where sales tax wasn't collected.", "q_hi": "उपयोग कर (Use Tax) क्या है?", "a_hi": "उन वस्तुओं पर कर जो आपके गृह राज्य में उपयोग के लिए राज्य के बाहर से खरीदी गई हैं जहाँ बिक्री कर एकत्र नहीं किया गया था।" },
+      { "q": "Is sales tax the same as VAT?", "a": "No, VAT is collected at every stage of production, while sales tax is only at the final sale.", "q_hi": "क्या बिक्री कर वैट (VAT) के समान है?", "a_hi": "नहीं, वैट उत्पादन के हर चरण में एकत्र किया जाता है, जबकि बिक्री कर केवल अंतिम बिक्री पर होता है।" }
+    ]
+  },
+  {
+    "name": "Personal Loan Calculator",
+    "name_hi": "व्यक्तिगत ऋण कैलकुलेटर",
+    "slug": "personal-loan-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "(loanAmount * (rate / 1200) * Math.pow(1 + (rate / 1200), years * 12)) / (Math.pow(1 + (rate / 1200), years * 12) - 1)",
+    "inputs": [
+      { "name": "loanAmount", "label": "Loan Amount ($)", "label_hi": "ऋण राशि ($)", "type": "number", "placeholder": "5000", "placeholder_hi": "5000" },
+      { "name": "rate", "label": "Interest Rate (%)", "label_hi": "ब्याज दर (%)", "type": "number", "placeholder": "12", "placeholder_hi": "12" },
+      { "name": "years", "label": "Loan Term (Years)", "label_hi": "ऋण अवधि (वर्ष)", "type": "number", "placeholder": "3", "placeholder_hi": "3" }
+    ],
+    "seoTitle": "Personal Loan Calculator - Monthly Payments & Interest",
+    "seoTitle_hi": "व्यक्तिगत ऋण कैलकुलेटर - मासिक भुगतान और ब्याज",
+    "metaDescription": "Estimate your monthly personal loan payments and total interest costs with our accurate calculator.",
+    "metaDescription_hi": "हमारे सटीक कैलकुलेटर के साथ अपने मासिक व्यक्तिगत ऋण भुगतान और कुल ब्याज लागत का अनुमान लगाएं।",
+    "showAmortization": true,
+    "hasChart": true,
+    "longContent": "# Guide to Personal Loans\n\nA personal loan is an amount of money you borrow for almost any purpose, including debt consolidation, home improvements, or major purchases. These loans are typically unsecured, meaning they don't require collateral like a house or car.\n\n## Factors Affecting Your Rate\n\n- **Credit Score**: The single most important factor for unsecured loans.\n- **Income**: Lenders want to see that you can afford the payments.\n- **Debt-to-Income Ratio (DTI)**: Your total monthly debt payments divided by your gross monthly income.\n\nPersonal loans usually have fixed interest rates and fixed monthly payments, making them easier to budget for than credit cards.",
+    "longContent_hi": "# व्यक्तिगत ऋण के लिए गाइड\n\nव्यक्तिगत ऋण वह राशि है जिसे आप लगभग किसी भी उद्देश्य के लिए उधार लेते हैं, जिसमें ऋण समेकन, घर में सुधार, या बड़ी खरीदारी शामिल है। ये ऋण आमतौर पर असुरक्षित होते हैं, जिसका अर्थ है कि उन्हें घर या कार जैसे संपार्श्विक की आवश्यकता नहीं होती है।\n\n## आपकी दर को प्रभावित करने वाले कारक\n\n- **क्रेडिट स्कोर**: असुरक्षित ऋणों के लिए सबसे महत्वपूर्ण कारक।\n- **आय**: ऋणदाता यह देखना चाहते हैं कि आप भुगतान वहन कर सकते हैं।\n- **ऋण-से-आय अनुपात (DTI)**: आपकी कुल मासिक ऋण अदायगी को आपकी सकल मासिक आय से विभाजित किया गया।\n\nव्यक्तिगत ऋणों में आमतौर पर निश्चित ब्याज दरें और निश्चित मासिक भुगतान होते हैं, जिससे उन्हें क्रेडिट कार्ड की तुलना में बजट बनाना आसान हो जाता।",
+    "faq": [
+      { "q": "What is an origination fee?", "a": "A fee charged by the lender for processing the loan, usually 1-8% of the loan amount.", "q_hi": "उत्पत्ति शुल्क (Origination Fee) क्या है?", "a_hi": "ऋण संसाधित करने के लिए ऋणदाता द्वारा लिया जाने वाला शुल्क, आमतौर पर ऋण राशि का 1-8%।" },
+      { "q": "Can I pay off a personal loan early?", "a": "Most modern lenders don't charge prepayment penalties, but always check your contract.", "q_hi": "क्या मैं व्यक्तिगत ऋण का समय से पहले भुगतान कर सकता हूँ?", "a_hi": "अधिकांश आधुनिक ऋणदाता पूर्व भुगतान दंड नहीं लेते हैं, लेकिन हमेशा अपने अनुबंध की जांच करें।" }
+    ]
+  },
+  {
+    "name": "Car Loan Calculator",
+    "name_hi": "कार ऋण कैलकुलेटर",
+    "slug": "car-loan-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "(loanAmount * (rate / 1200) * Math.pow(1 + (rate / 1200), years * 12)) / (Math.pow(1 + (rate / 1200), years * 12) - 1)",
+    "inputs": [
+      { "name": "loanAmount", "label": "Car Loan Amount ($)", "label_hi": "कार ऋण राशि ($)", "type": "number", "placeholder": "25000", "placeholder_hi": "25000" },
+      { "name": "rate", "label": "Interest Rate (%)", "label_hi": "ब्याज दर (%)", "type": "number", "placeholder": "6", "placeholder_hi": "6" },
+      { "name": "years", "label": "Loan Term (Years)", "label_hi": "ऋण अवधि (वर्ष)", "type": "number", "placeholder": "5", "placeholder_hi": "5" }
+    ],
+    "seoTitle": "Car Loan Calculator - Estimate Your Auto Payments",
+    "seoTitle_hi": "कार ऋण कैलकुलेटर - अपने ऑटो भुगतान का अनुमान लगाएं",
+    "metaDescription": "Calculate your monthly car loan payments and see how much interest you will pay over the life of the loan.",
+    "metaDescription_hi": "अपने मासिक कार ऋण भुगतान की गणना करें और देखें कि आप ऋण की अवधि के दौरान कितना ब्याज देंगे।",
+    "showAmortization": true,
+    "hasChart": true,
+    "longContent": "# Financing Your Next Vehicle\n\nBuying a car is a major financial decision. Most people use an auto loan to spread the cost over several years. Understanding the total cost of ownership is key.\n\n## Loan Term vs. Interest\n\nWhile a longer loan term (e.g., 72 or 84 months) results in a lower monthly payment, you will pay significantly more in total interest. Aim for the shortest term you can comfortably afford.\n\n## Down Payments\n\nA larger down payment reduces the amount you need to borrow, which lowers your monthly payment and can sometimes help you secure a better interest rate.",
+    "longContent_hi": "# अपने अगले वाहन का वित्तपोषण\n\nकार खरीदना एक बड़ा वित्तीय निर्णय है। अधिकांश लोग कई वर्षों में लागत फैलाने के लिए ऑटो ऋण का उपयोग करते हैं। स्वामित्व की कुल लागत को समझना महत्वपूर्ण है।\n\n## ऋण अवधि बनाम ब्याज\n\nजबकि लंबी ऋण अवधि (जैसे, 72 या 84 महीने) के परिणामस्वरूप मासिक भुगतान कम होता है, आप कुल ब्याज में काफी अधिक भुगतान करेंगे। सबसे छोटी अवधि का लक्ष्य रखें जिसे आप आराम से वहन कर सकें।\n\n## डाउन पेमेंट\n\nएक बड़ा डाउन पेमेंट आपके द्वारा उधार ली जाने वाली राशि को कम करता है, जिससे आपका मासिक भुगतान कम हो जाता है और कभी-कभी आपको बेहतर ब्याज दर सुरक्षित करने में मदद मिल सकती है।",
+    "faq": [
+      { "q": "What is a good car loan rate?", "a": "It varies by credit score and market conditions; 4-7% is currently common for good credit.", "q_hi": "एक अच्छी कार ऋण दर क्या है?", "a_hi": "यह क्रेडिट स्कोर और बाजार की स्थितियों के अनुसार भिन्न होता है; अच्छे क्रेडिट के लिए वर्तमान में 4-7% सामान्य है।" },
+      { "q": "Should I buy or lease?", "a": "Buy if you want to own the asset long-term; lease if you want a new car every few years.", "q_hi": "क्या मुझे खरीदना चाहिए या लीज पर लेना चाहिए?", "a_hi": "यदि आप लंबी अवधि के लिए संपत्ति के मालिक बनना चाहते हैं तो खरीदें; यदि आप हर कुछ वर्षों में एक नई कार चाहते हैं तो लीज पर लें।" }
+    ]
+  },
+  {
+    "name": "Credit Card Min Payment",
+    "name_hi": "क्रेडिट कार्ड न्यूनतम भुगतान",
+    "slug": "credit-card-min-payment",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "balance * (minPercentage / 100)",
+    "inputs": [
+      { "name": "balance", "label": "Credit Card Balance ($)", "label_hi": "क्रेडिट कार्ड शेष राशि ($)", "type": "number", "placeholder": "2000", "placeholder_hi": "2000" },
+      { "name": "minPercentage", "label": "Minimum Payment Percentage (%)", "label_hi": "न्यूनतम भुगतान प्रतिशत (%)", "type": "number", "placeholder": "2", "placeholder_hi": "2" }
+    ],
+    "seoTitle": "Credit Card Minimum Payment Calculator",
+    "seoTitle_hi": "क्रेडिट कार्ड न्यूनतम भुगतान कैलकुलेटर",
+    "metaDescription": "Calculate your estimated minimum credit card payment and see why paying only the minimum is a debt trap.",
+    "metaDescription_hi": "अपने अनुमानित न्यूनतम क्रेडिट कार्ड भुगतान की गणना करें और देखें कि केवल न्यूनतम भुगतान करना ऋण का जाल क्यों है।",
+    "hasChart": true,
+    "longContent": "# The Trap of Minimum Payments\n\nCredit card companies usually require a minimum monthly payment, which is often around 2-3% of your total balance. While this keeps you in good standing, it's designed to keep you in debt for as long as possible.\n\n## How Interest Eats Your Payment\n\nIf your interest rate is 20% and your minimum payment is 2%, almost all of that payment goes toward interest. Your principal balance barely moves, leading to a cycle of debt that can last decades.\n\n## Breaking the Cycle\n\nAlways aim to pay more than the minimum. Even an extra $50 a month can save you thousands in interest over time.",
+    "longContent_hi": "# न्यूनतम भुगतान का जाल\n\nक्रेडिट कार्ड कंपनियां आमतौर पर न्यूनतम मासिक भुगतान की मांग करती हैं, जो अक्सर आपके कुल शेष का लगभग 2-3% होता है। हालांकि यह आपको अच्छी स्थिति में रखता है, लेकिन इसे आपको यथासंभव लंबे समय तक कर्ज में रखने के लिए बनाया गया है।\n\n## ब्याज आपके भुगतान को कैसे खा जाता है\n\nयदि आपकी ब्याज दर 20% है और आपका न्यूनतम भुगतान 2% है, तो उस भुगतान का लगभग पूरा हिस्सा ब्याज में चला जाता है। आपका मूल शेष शायद ही हिलता है, जिससे ऋण का एक चक्र बन जाता है जो दशकों तक चल सकता है।\n\n## चक्र को तोड़ना\n\nहमेशा न्यूनतम से अधिक भुगतान करने का लक्ष्य रखें। महीने में अतिरिक्त $50 भी समय के साथ आपको ब्याज में हजारों की बचत करा सकते हैं।",
+    "faq": [
+      { "q": "How is the minimum payment calculated?", "a": "Usually a percentage of the balance or interest plus 1% of the principal.", "q_hi": "न्यूनतम भुगतान की गणना कैसे की जाती है?", "a_hi": "आमतौर पर शेष राशि का एक प्रतिशत या ब्याज प्लस मूलधन का 1%।" },
+      { "q": "What happens if I miss a payment?", "a": "You'll face late fees and a potential spike in your interest rate (penalty APR).", "q_hi": "यदि मैं भुगतान चूक जाऊं तो क्या होगा?", "a_hi": "आपको विलंब शुल्क और आपकी ब्याज दर (दंड APR) में संभावित वृद्धि का सामना करना पड़ेगा।" }
+    ]
+  },
+  {
+    "name": "Debt Snowball Calculator",
+    "name_hi": "ऋण स्नोबॉल कैलकुलेटर",
+    "slug": "debt-snowball",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "totalDebt / extraMonthlyPayment",
+    "inputs": [
+      { "name": "totalDebt", "label": "Total Debt Amount ($)", "label_hi": "कुल ऋण राशि ($)", "type": "number", "placeholder": "15000", "placeholder_hi": "15000" },
+      { "name": "extraMonthlyPayment", "label": "Extra Monthly Payment ($)", "label_hi": "अतिरिक्त मासिक भुगतान ($)", "type": "number", "placeholder": "300", "placeholder_hi": "300" }
+    ],
+    "seoTitle": "Debt Snowball Calculator - Pay Off Debt Fast",
+    "seoTitle_hi": "ऋण स्नोबॉल कैलकुलेटर - कर्ज जल्दी चुकाएं",
+    "metaDescription": "Use the debt snowball method to pay off your debts from smallest to largest for psychological momentum.",
+    "metaDescription_hi": "मनोवैज्ञानिक गति के लिए अपने ऋणों को सबसे छोटे से सबसे बड़े क्रम में चुकाने के लिए ऋण स्नोबॉल पद्धति का उपयोग करें।",
+    "hasChart": true,
+    "longContent": "# The Debt Snowball Method\n\nPopularized by Dave Ramsey, the debt snowball method is a debt-reduction strategy where you pay off your debts in order of smallest to largest balance, regardless of interest rate.\n\n## Why it Works\n\nThis method focuses on **behavioral psychology** rather than pure math. By paying off small debts quickly, you see immediate progress, which gives you the motivation to tackle larger debts.\n\n## How to Do It\n\n1. List all debts from smallest to largest.\n2. Make minimum payments on all debts except the smallest.\n3. Pay as much as possible on the smallest debt.\n4. Once paid off, roll that payment into the next smallest debt.",
+    "longContent_hi": "# ऋण स्नोबॉल पद्धति\n\nडेव रैमसे द्वारा लोकप्रिय, ऋण स्नोबॉल पद्धति एक ऋण-कमी की रणनीति है जहाँ आप ब्याज दर की परवाह किए बिना अपने ऋणों को सबसे छोटे से सबसे बड़े शेष के क्रम में चुकाते हैं।\n\n## यह क्यों काम करता है\n\nयह पद्धति शुद्ध गणित के बजाय **व्यवहार मनोविज्ञान** पर केंद्रित है। छोटे ऋणों को जल्दी चुकाकर, आप तत्काल प्रगति देखते हैं, जो आपको बड़े ऋणों से निपटने की प्रेरणा देता है।\n\n## इसे कैसे करें\n\n1. सभी ऋणों को सबसे छोटे से सबसे बड़े क्रम में सूचीबद्ध करें।\n2. सबसे छोटे को छोड़कर सभी ऋणों पर न्यूनतम भुगतान करें।\n3. सबसे छोटे ऋण पर यथासंभव अधिक भुगतान करें।\n4. एक बार भुगतान हो जाने के बाद, उस भुगतान को अगले सबसे छोटे ऋण में डाल दें।",
+    "faq": [
+      { "q": "Snowball vs. Avalanche?", "a": "Snowball focuses on small wins; Avalanche focuses on saving the most interest.", "q_hi": "स्नोबॉल बनाम हिमस्खलन (Avalanche)?", "a_hi": "स्नोबॉल छोटी जीत पर ध्यान केंद्रित करता है; हिमस्खलन सबसे अधिक ब्याज बचाने पर ध्यान केंद्रित करता है।" },
+      { "q": "Is Snowball mathematically best?", "a": "No, Avalanche is mathematically superior, but Snowball is often more successful behaviorally.", "q_hi": "क्या स्नोबॉल गणितीय रूप से सबसे अच्छा है?", "a_hi": "नहीं, हिमस्खलन गणितीय रूप से बेहतर है, लेकिन स्नोबॉल अक्सर व्यवहारिक रूप से अधिक सफल होता है।" }
+    ]
+  },
+  {
+    "name": "IRR Calculator",
+    "name_hi": "IRR कैलकुलेटर",
+    "slug": "irr-calculator",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "((Math.pow(finalValue / initialInvestment, 1 / years) - 1) * 100)",
+    "inputs": [
+      { "name": "initialInvestment", "label": "Initial Investment ($)", "label_hi": "प्रारंभिक निवेश ($)", "type": "number", "placeholder": "10000", "placeholder_hi": "10000" },
+      { "name": "finalValue", "label": "Final Value ($)", "label_hi": "अंतिम मूल्य ($)", "type": "number", "placeholder": "25000", "placeholder_hi": "25000" },
+      { "name": "years", "label": "Time Period (Years)", "label_hi": "समय अवधि (वर्ष)", "type": "number", "placeholder": "5", "placeholder_hi": "5" }
+    ],
+    "seoTitle": "IRR Calculator - Internal Rate of Return",
+    "seoTitle_hi": "IRR कैलकुलेटर - आंतरिक प्रतिफल दर",
+    "metaDescription": "Calculate the Internal Rate of Return (IRR) for an investment to understand its annualized profitability.",
+    "metaDescription_hi": "किसी निवेश की वार्षिक लाभप्रदता को समझने के लिए उसके आंतरिक प्रतिफल दर (IRR) की गणना करें।",
+    "hasChart": true,
+    "longContent": "# Understanding Internal Rate of Return (IRR)\n\nInternal Rate of Return (IRR) is a metric used in financial analysis to estimate the profitability of potential investments. IRR is a discount rate that makes the net present value (NPV) of all cash flows equal to zero in a discounted cash flow analysis.\n\n## Why IRR is Important\n\nIRR allows investors to compare the profitability of different projects or investments regardless of their scale. A higher IRR indicates a more desirable investment.\n\n## Annualized Returns\n\nThis simplified IRR calculator provides the **Annualized Return**, which is essential for comparing investments over different time periods.",
+    "longContent_hi": "# आंतरिक प्रतिफल दर (IRR) को समझना\n\nआंतरिक प्रतिफल दर (IRR) वित्तीय विश्लेषण में उपयोग किया जाने वाला एक मीट्रिक है जो संभावित निवेशों की लाभप्रदता का अनुमान लगाता है। IRR एक छूट दर है जो रियायती नकदी प्रवाह विश्लेषण में सभी नकदी प्रवाह के शुद्ध वर्तमान मूल्य (NPV) को शून्य के बराबर बनाती है।\n\n## IRR क्यों महत्वपूर्ण है?\n\nIRR निवेशकों को उनके पैमाने की परवाह किए बिना विभिन्न परियोजनाओं या निवेशों की लाभप्रदता की तुलना करने की अनुमति देता है। एक उच्च IRR अधिक वांछनीय निवेश का संकेत देता है।\n\n## वार्षिक रिटर्न\n\nयह सरलीकृत IRR कैलकुलेटर **वार्षिक रिटर्न** प्रदान करता है, जो विभिन्न समय अवधियों में निवेश की तुलना करने के लिए आवश्यक है।",
+    "faq": [
+      { "q": "What is a good IRR?", "a": "It depends on the industry, but 15-20% is often considered strong for private equity.", "q_hi": "एक अच्छा IRR क्या है?", "a_hi": "यह उद्योग पर निर्भर करता है, लेकिन निजी इक्विटी के लिए अक्सर 15-20% को मजबूत माना जाता है।" },
+      { "q": "IRR vs. ROI?", "a": "ROI shows total growth; IRR shows the annualized growth rate.", "q_hi": "IRR बनाम ROI?", "a_hi": "ROI कुल वृद्धि दिखाता है; IRR वार्षिक वृद्धि दर दिखाता है।" }
+    ]
+  },
+  {
+    "name": "Mortgage Refinance",
+    "name_hi": "मॉर्गेज पुनर्वित्त",
+    "slug": "mortgage-refinance",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "((currentPayment - newPayment) * 12 * years) - closingCosts",
+    "inputs": [
+      { "name": "currentPayment", "label": "Current Monthly Payment ($)", "label_hi": "वर्तमान मासिक भुगतान ($)", "type": "number", "placeholder": "2000", "placeholder_hi": "2000" },
+      { "name": "newPayment", "label": "New Monthly Payment ($)", "label_hi": "नया मासिक भुगतान ($)", "type": "number", "placeholder": "1700", "placeholder_hi": "1700" },
+      { "name": "closingCosts", "label": "Refinance Closing Costs ($)", "label_hi": "पुनर्वित्त समापन लागत ($)", "type": "number", "placeholder": "5000", "placeholder_hi": "5000" },
+      { "name": "years", "label": "Years You Plan to Stay", "label_hi": "जितने साल आप रहने की योजना बना रहे हैं", "type": "number", "placeholder": "10", "placeholder_hi": "10" }
+    ],
+    "seoTitle": "Mortgage Refinance Calculator - Should You Refinance?",
+    "seoTitle_hi": "मॉर्गेज पुनर्वित्त कैलकुलेटर - क्या आपको पुनर्वित्त करना चाहिए?",
+    "metaDescription": "Calculate if refinancing your mortgage will save you money after accounting for closing costs.",
+    "metaDescription_hi": "गणना करें कि क्या आपके मॉर्गेज को पुनर्वित्त करने से समापन लागतों के बाद आपके पैसे बचेंगे।",
+    "hasChart": true,
+    "longContent": "# To Refinance or Not to Refinance?\n\nRefinancing your mortgage means replacing your current loan with a new one, typically with different terms. The goal is usually to lower the interest rate or change the loan duration.\n\n## The Break-Even Point\n\nThe most important calculation in refinancing is the **break-even point**. This is how long it takes for your monthly savings to cover the upfront closing costs of the new loan.\n\n## Reasons to Refinance\n\n- **Lower Interest Rates**: The most common reason.\n- **Cash-Out Refinance**: Accessing your home's equity for other expenses.\n- **Switching Loan Types**: Moving from an Adjustable Rate Mortgage (ARM) to a Fixed Rate.",
+    "longContent_hi": "# पुनर्वित्त करें या न करें?\n\nअपने मॉर्गेज को पुनर्वित्त करने का अर्थ है अपने वर्तमान ऋण को एक नए ऋण के साथ बदलना, आमतौर पर अलग-अलग शर्तों के साथ। लक्ष्य आमतौर पर ब्याज दर को कम करना या ऋण की अवधि को बदलना होता है।\n\n## ब्रेक-ईवन पॉइंट (Break-Even Point)\n\nपुनर्वित्त में सबसे महत्वपूर्ण गणना **ब्रेक-ईवन पॉइंट** है। यह वह समय है जब आपकी मासिक बचत नए ऋण की अग्रिम समापन लागतों को कवर कर लेती है।\n\n## पुनर्वित्त के कारण\n\n- **कम ब्याज दरें**: सबसे आम कारण।\n- **कैश-आउट पुनर्वित्त**: अन्य खर्चों के लिए अपने घर की इक्विटी तक पहुंचना।\n- **ऋण प्रकार बदलना**: एडजस्टेबल रेट मॉर्गेज (ARM) से फिक्स्ड रेट में जाना।",
+    "faq": [
+      { "q": "What are typical refinance costs?", "a": "Usually 2-5% of the loan amount.", "q_hi": "सामान्य पुनर्वित्त लागत क्या हैं?", "a_hi": "आमतौर पर ऋण राशि का 2-5%।" },
+      { "q": "Does refinancing hurt my credit?", "a": "A small temporary dip due to the credit inquiry and closing an old account.", "q_hi": "क्या पुनर्वित्त मेरे क्रेडिट को नुकसान पहुँचाता है?", "a_hi": "क्रेडिट पूछताछ और पुराने खाते को बंद करने के कारण एक छोटी अस्थायी गिरावट।" }
+    ]
+  },
+  {
+    "name": "Investment Growth",
+    "name_hi": "निवेश वृद्धि",
+    "slug": "investment-growth",
+    "category": "Finance",
+    "category_hi": "वित्त",
+    "formula": "principal * Math.pow(1 + (rate / 100), years)",
+    "inputs": [
+      { "name": "principal", "label": "Initial Investment ($)", "label_hi": "प्रारंभिक निवेश ($)", "type": "number", "placeholder": "10000", "placeholder_hi": "10000" },
+      { "name": "rate", "label": "Annual Growth Rate (%)", "label_hi": "वार्षिक वृद्धि दर (%)", "type": "number", "placeholder": "8", "placeholder_hi": "8" },
+      { "name": "years", "label": "Time Period (Years)", "label_hi": "समय अवधि (वर्ष)", "type": "number", "placeholder": "20", "placeholder_hi": "20" }
+    ],
+    "seoTitle": "Investment Growth Calculator - Compound Your Wealth",
+    "seoTitle_hi": "निवेश वृद्धि कैलकुलेटर - अपनी संपत्ति बढ़ाएं",
+    "metaDescription": "See how your investments will grow over time with the power of compound interest.",
+    "metaDescription_hi": "देखें कि चक्रवृद्धि ब्याज की शक्ति के साथ आपके निवेश समय के साथ कैसे बढ़ेंगे।",
+    "hasChart": true,
+    "longContent": "# The Magic of Compound Interest\n\nCompound interest is the interest on a loan or deposit calculated based on both the initial principal and the accumulated interest from previous periods. Einstein famously called it the 'eighth wonder of the world'.\n\n## How it Works\n\nIn the early years, growth is slow. But as your interest starts earning its own interest, the curve steepens. Over 20 or 30 years, the majority of your wealth will likely come from growth rather than your original contributions.\n\n## Consistency is Key\n\nEven a small difference in the growth rate (e.g., 7% vs 8%) can lead to a massive difference in the final amount over long periods.",
+    "longContent_hi": "# चक्रवृद्धि ब्याज का जादू\n\nचक्रवृद्धि ब्याज किसी ऋण या जमा पर ब्याज है जिसकी गणना प्रारंभिक मूलधन और पिछले अवधियों के संचित ब्याज दोनों के आधार पर की जाती है। आइंस्टीन ने प्रसिद्ध रूप से इसे 'दुनिया का आठवां अजूबा' कहा था।\n\n## यह कैसे काम करता है\n\nशुरुआती वर्षों में, वृद्धि धीमी होती है। लेकिन जैसे-जैसे आपका ब्याज अपना ब्याज अर्जित करना शुरू करता है, वक्र तेज हो जाता है। 20 या 30 वर्षों में, आपकी संपत्ति का अधिकांश हिस्सा आपके मूल योगदान के बजाय वृद्धि से आने की संभावना है।\n\n## निरंतरता महत्वपूर्ण है\n\nविकास दर में एक छोटा सा अंतर (जैसे, 7% बनाम 8%) भी लंबी अवधि में अंतिम राशि में भारी अंतर पैदा कर सकता है।",
+    "faq": [
+      { "q": "What is the Rule of 72?", "a": "Divide 72 by your interest rate to find how many years it takes to double your money.", "q_hi": "72 का नियम (Rule of 72) क्या है?", "a_hi": "अपने पैसे को दोगुना करने में कितने साल लगेंगे, यह जानने के लिए 72 को अपनी ब्याज दर से विभाजित करें।" },
+      { "q": "Should I reinvest dividends?", "a": "Yes, reinvesting dividends is one of the best ways to accelerate compounding.", "q_hi": "क्या मुझे लाभांश (Dividends) को पुनर्निवेश करना चाहिए?", "a_hi": "हाँ, लाभांश को पुनर्निवेश करना चक्रवृद्धि को तेज करने के सर्वोत्तम तरीकों में से एक है।" }
+    ]
+  }
+]
